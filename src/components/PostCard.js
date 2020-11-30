@@ -8,7 +8,7 @@ import LikeButton from './LikeButton.js'
 import DeleteButton from './DeleteButton.js'
 
 function PostCard(props){
-    const { body, createdAt, id, username, likesCount, commentsCount, likes, comments} = props.post
+    const { body, createdAt, id, username, likesCount, commentsCount, likes} = props.post
 
     const {user} = useContext(AuthContext)
 
@@ -32,7 +32,7 @@ function PostCard(props){
                         content="Comment on post"
                         inverted
                         trigger={
-                            <Button as='div' labelPosition='right' as={Link} to={`/posts/${id}`}>
+                            <Button labelPosition='right' as={Link} to={`/posts/${id}`}>
                         <Button color='blue' basic>
                             <Icon name='comments' />
                         </Button>

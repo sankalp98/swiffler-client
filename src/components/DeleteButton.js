@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Button, Icon, Confirm, Label, Popup } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Button, Icon, Confirm, Popup } from 'semantic-ui-react'
 import {useMutation} from '@apollo/client'
 import gql from 'graphql-tag'
 import {FETCH_POSTS_QUERY} from '../util/graphql'
