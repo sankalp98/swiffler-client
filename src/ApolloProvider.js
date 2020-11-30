@@ -7,7 +7,7 @@ import { ApolloProvider } from '@apollo/client'
 import { setContext } from 'apollo-link-context'
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:5000/'
+    uri: 'https://lit-springs-76899.herokuapp.com/'
 })
 
 const authLink = setContext((request, previousContext) => {
